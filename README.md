@@ -1,8 +1,8 @@
-# 📚 Library Management System
+#  Library Management System
 
 A console-based Library Management System built in Java, demonstrating core Object-Oriented Programming principles, collections handling, and file persistence.
 
-## ✨ Features
+##  Features
 
 - **Book Management (CRUD)**
   - Add new books (with duplicate ISBN prevention)
@@ -20,13 +20,13 @@ A console-based Library Management System built in Java, demonstrating core Obje
   - Save the entire library catalog to a text file
   - Load the catalog back on startup — no data loss between sessions
 
-## 🛠️ Built With
+##  Built With
 
 - **Java** (Core OOP concepts)
 - Standard Java I/O (`BufferedReader`, `PrintWriter`) for file persistence
 - `ArrayList` for in-memory data management
 
-## 🏗️ Project Structure
+##  Project Structure
 
 ```
 src/
@@ -37,7 +37,7 @@ src/
     └── Main.java       # Entry point / demo runner
 ```
 
-## 🎯 Key Concepts Demonstrated
+##  Key Concepts Demonstrated
 
 - Object-Oriented Design (encapsulation, class relationships)
 - Collections (`ArrayList`) for dynamic data storage
@@ -45,7 +45,7 @@ src/
 - File I/O for data persistence (read/write text files)
 - Defensive programming (duplicate checks, null handling, availability validation)
 
-## 🚀 How to Run
+##  How to Run
 
 1. Clone the repository:
    ```bash
@@ -54,7 +54,7 @@ src/
 2. Open the project in your preferred Java IDE (NetBeans, IntelliJ, Eclipse).
 3. Run `Main.java`.
 
-## 📖 Sample Output
+##  Sample Output
 
 ```
 The book has been successfully added: Harry Potter
@@ -68,14 +68,14 @@ Ahmed removed: Harry Potter
 Ahmed borrowed: Harry Potter
 ```
 
-## 🔮 Future Improvements
+##  Future Improvements
 
 - [ ] Graphical User Interface (JavaFX/Swing)
 - [ ] Due dates and overdue fine calculation
 - [ ] Multiple member support with unique IDs and login
 - [ ] Database integration (replacing text file storage)
 
-## 👤 Author
+##  Author
 
 Built as a learning project to strengthen Java fundamentals and OOP design.
 
