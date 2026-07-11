@@ -1,22 +1,27 @@
-
 package com.mycompany.library;
 
+import java.time.LocalDate;
+
 public class Book {
-        @Override
+@Override
 public String toString() {
-    return "Title: " + title + " | Author: " + author + " | ISBN: " + ISBN + " | Available: " + Available;
+    return "Title: " + title + " | Author: " + author + " | ISBN: " + ISBN + " | Available: " + available +
+           "\n   AI Description: " + description;
 }
-    private String title;
-    private String author;
-    private String ISBN;
-    private boolean Available;
+    private final String title;
+    private final String author;
+    private final String ISBN;
+    private String description;
+    private boolean available;
+    private String borrowedBy;
+    private LocalDate dueDate;
 
     
     public Book(String title, String author, String isbn) {
     this.title = title;
     this.author = author;
     this.ISBN = isbn;
-    this.Available = true;
+    this.available = true;
 }
     
     public String getTitle(){
@@ -32,11 +37,34 @@ public String toString() {
     }
     
     public boolean isAvailable(){
-        return Available;
+        return available;
     }    
     
     public void setAvailable(boolean available) {
-    this.Available = available;
+        this.available = available;
+    }
+    
+    public String getDescription() {
+        return description;
     }
 
+    public void setDescription(String description) {
+        this.description = description;
+    }
+    
+    public String getBorrowedBy() {
+        return borrowedBy;
+    }
+
+    public void setBorrowedBy(String borrowedBy) {
+        this.borrowedBy = borrowedBy;
+    }
+    
+    public LocalDate getDueDate() {
+        return dueDate;
+    }
+
+    public void setDueDate(LocalDate dueDate) {
+        this.dueDate = dueDate;
+    }   
 }
