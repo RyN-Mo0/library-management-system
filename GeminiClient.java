@@ -10,7 +10,7 @@ import com.google.gson.JsonParser;
 public class GeminiClient {
     
     
-    private static final String API_KEY = System.getenv("GEMINI_API_KEY");   // ✅ هذا الصحيح
+    private static final String API_KEY = System.getenv("GEMINI_API_KEY");  
     private static final String URL = "https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent";
 
     public static String generateBookDescription(String title, String author) {    
